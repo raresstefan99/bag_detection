@@ -41,6 +41,9 @@ source install/setup.bash
 ## ▶️ Come avviare il progetto
 
 ### **1️⃣ Avviare la simulazione in Gazebo**
+Se si vuole utilizzare un altro ambiente di simulazione, l'importante è comunicare attraverso i topic corretti:
+- ***/camera/color/image_raw***
+- ***/camera/depth/image_raw***
 
 ### **2️⃣ Avviare il nodo di rilevamento della bag**
 
