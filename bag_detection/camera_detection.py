@@ -107,6 +107,9 @@ class BagDetectionNode(Node):
                 cv2.rectangle(rgb_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
                 cv2.putText(rgb_image, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
                 print(f"Oggetto rilevato: {label}, Profondità media: {mean_depth:.2f} m")
+
+            if hasattr(result, 'keypoints') and result.keypoints is not None:
+                self.process_keypoints(result.keypoints, depth_image, rgb_image)
         
         return rgb_image
 
