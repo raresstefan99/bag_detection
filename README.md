@@ -19,7 +19,7 @@ Per eseguire il progetto, assicurati di avere installato:
 
 - **Ubuntu 22.04**
 - **ROS 2 Humble** ([Guida all'installazione](https://docs.ros.org/en/humble/Installation.html))
-- **Gazebo** ???
+- **Gazebo**
 - **Python 3**
 
 ---
