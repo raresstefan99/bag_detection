@@ -43,12 +43,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'camera_detection = bag_detection.camera_detection:main',
-            'camera_detection_only_RGB = bag_detection.camera_detection_only_RGB:main',
-            'test_yolo = bag_detection.test_yolo:main',
-            'test_camera_detection = bag_detection.test_camera_detection:main',
-            'prova_publisher = bag_detection.prova_publisher:main'
-
+            'camera_detection = bag_detection.camera_detection:main'
         ],
     },
 )
